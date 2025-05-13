@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Search } from "lucide-react"
 import axios from 'axios';
 import './SearchAirport.css';
@@ -50,7 +50,7 @@ const SearchAirport = () => {
         <div className="input-button-container">
           <input
             type="text"
-            placeholder="Search for airports..."
+            placeholder="Search for airports near City/Country..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="input"
@@ -97,7 +97,8 @@ const SearchAirport = () => {
                   >
                     <h2 className="result-item-title">{airport.presentation.title}, {airport.presentation.subtitle}</h2>
                     <p>Airport Name: {airport.presentation.title}</p>
-                    <p>IATA Code: {airport.entityId}</p>
+                    <p>SkyId: {airport.skyId}</p>
+                    <p>EntityId: {airport.entityId}</p>
                   </div>
                 ))}
               </div>

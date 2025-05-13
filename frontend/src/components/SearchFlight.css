@@ -1,0 +1,43 @@
+.carriers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 1rem;
+}
+
+.carrier-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.carrier-image {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.carrier-info {
+  padding: 1rem;
+}
+
+.carrier-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.destination-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #007bff; 
+} 
+
+.destination-image {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+}
